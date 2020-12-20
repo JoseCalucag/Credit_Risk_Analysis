@@ -6,14 +6,9 @@
  
  
 <h2> Overview of the analysis </h2>
-Using a credit card dataset from LendingClub, this project will take a look at the factors that can help predict whether someone is a low or high credit risk. We will use the imbalanced-learn and scikit-learn libraries to build models so to then train and evaluate them using various algorthims. Firstly, we applied oversampling algorithms in RandomOverSampler and SMOTE and then used an undersampling algorithm in ClusterCentroids. Next, we used SMOTEENN which combines oversampling and undersampling. Finally, we compared two machine mearning models in BalancedRandomForestClassifier and EasyEnsembleClassifier. Once finished creating a model from each algorthm, we can evaluate the data from a generated report and make a recommendation whether or not the any of these six algorthims should be used to predict credit risk.
+Using a credit card dataset from LendingClub, this project will take a look at six modelling algorithms that can help predict whether someone is a low or high credit risk. We will use the imbalanced-learn and scikit-learn libraries to build models where we can evaluate and compare each of their results. Firstly, we used oversampling algorithms in RandomOverSampler and SMOTE and then an undersampling algorithm in ClusterCentroids. Next, we used SMOTEENN which combines both oversampling and undersampling. Finally, we compared two machine mearning models in BalancedRandomForestClassifier and EasyEnsembleClassifier. Once finished creating a model from each algorthm, we can evaluate the data from a generated report and make a recommendation whether or not any of these six algorthims should be used to predict credit risk.
 
 <h2> Results </h2> 
-# here is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models (15 pt) <br>
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. <br>
-Use screenshots of your outputs to support your results.
-
-There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models
 
 RandomOverSampler <br>
 <img src = "https://github.com/JoseCalucag/Credit_Risk_Analysis/blob/main/pics/ROS.png">
@@ -53,4 +48,4 @@ EasyEnsembleClassifier <br>
 
 
 <h2> Summary </h2>
-With an overview of our results, we can see that the resapling algorithms are not as reliable; especially looking RandomOverSampling with the lowest accuracy at 58%. Even the oversampling of SMOTE (63.9%), the undersampling of ClusterCentroids (63.9%) and the combined sampling of SMOTEEN (64.8%) pale in campirison to our two other machine learning models. Albeit BalancedRandomForestClassifier has a better score (74.8%), EasyEnsembleClassifier has the best accuracy in 91.8%. Furthermore, EasyEnsembleClassifier also has the best high risk precision in 9%, a recall value of 92% and a f-score of 16%. Therefore, it is to my recommendation to use EasyEnsembleClassifier out of all the models for the highest predicitive accuracy, showing the higest recall value aned f-score in low risk precision for positive samples.
+With an overview of our results, we can iniitally see that the resampling algorithms are not as reliable; especially looking RandomOverSampling with the lowest accuracy at 58%. Even the oversampling of SMOTE (63.9%), the undersampling of ClusterCentroids (63.9%) and the combined sampling of SMOTEEN (64.8%) pale in campirison to our two other machine learning models. Albeit BalancedRandomForestClassifier has a better score (74.8%), EasyEnsembleClassifier has the best accuracy in 91.8%. Furthermore, EasyEnsembleClassifier also has the best high risk precision in 9%, a recall value of 92% and a f-score of 16%. Therefore, it is to my recommendation to use EasyEnsembleClassifier out of all the models for the highest predicitive accuracy, showing the higest recall value aned f-score in low risk precision for positive samples.
