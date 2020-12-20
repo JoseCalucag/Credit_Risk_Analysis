@@ -13,8 +13,44 @@ Using a credit card dataset from LendingClub, this project will take a look at t
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. <br>
 Use screenshots of your outputs to support your results.
 
+There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models
+
+RandomOverSampler <br>
+<img src = "https://github.com/JoseCalucag/Credit_Risk_Analysis/blob/main/pics/ROS.png">
+* Balanced accuracy score: 58.0%
+* A high risk precision at 1%, a recall value of 45% connected to a f-score of 2%
+* A low risk precision at 100%, a recall value of only 71% connected to a f-score of 83%
+
+SMOTE <br>
+<img src = "https://github.com/JoseCalucag/Credit_Risk_Analysis/blob/main/pics/SMOTE.png">
+* Balanced accuracy score: 63.9%
+* A high risk precision at 1%, a recall value of 54% conneced to a f-score of 2%
+* A low risk precision at 100%, a recall value of only 74% connected to a f-score of 85%
+
+ClusterCentroids <br>
+<img src = "https://github.com/JoseCalucag/Credit_Risk_Analysis/blob/main/pics/CC.png">
+* Balanced accuracy score: 63.9%
+* A high risk precision at 1%, a recall value of 54% conneced to a f-score of 1%
+* A low risk precision at 100%, a recall value of only 50% connected to a f-score of 66%
+
+SMOTEENN <br>
+<img src = "https://github.com/JoseCalucag/Credit_Risk_Analysis/blob/main/pics/SMOTEENN.png">
+* Balanced accuracy score: 64.8%
+* A high risk precision at 1%, a recall value of 62% conneced to a f-score of 2%
+* A low risk precision at 100%, a recall value of only 67% connected to a f-score of 80%
+
+BalancedRandomForestClassifier <br>
+<img src = "https://github.com/JoseCalucag/Credit_Risk_Analysis/blob/main/pics/BRFC.png">
+* Balanced accuracy score: 74.8%
+* A high risk precision at 3%, a recall value of 62% conneced to a f-score of 6%
+* A low risk precision at 100%, a recall value of only 88% connected to a f-score of 94%
+
+EasyEnsembleClassifier <br>
+<img src = "https://github.com/JoseCalucag/Credit_Risk_Analysis/blob/main/pics/EEC.png">
+* Balanced accuracy score: 91.8%
+* A high risk precision at 9%, a recall value of 92% conneced to a f-score of 16%
+* A low risk precision at 100%, a recall value of only 94% connected to a f-score of 97%
+
+
 <h2> Summary </h2>
-# There is a summary of the results (2 pt) <br>
-# There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt) <br>
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. 
-If you do not recommend any of the models, justify your reasoning.
+With an overview of our results, we can see that the resapling algorithms are not as reliable; especially looking RandomOverSampling with the lowest accuracy at 58%. Even the oversampling of SMOTE (63.9%), the undersampling of ClusterCentroids (63.9%) and the combined sampling of SMOTEEN (64.8%) pale in campirison to our two other machine learning models. Albeit BalancedRandomForestClassifier has a better score (74.8%), EasyEnsembleClassifier has the best accuracy in 91.8%. Furthermore, EasyEnsembleClassifier also has the best high risk precision in 9%, a recall value of 92% and a f-score of 16%. Therefore, it is to my recommendation to use EasyEnsembleClassifier out of all the models for the highest predicitive accuracy, showing the higest recall value aned f-score in low risk precision for positive samples.
